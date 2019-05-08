@@ -1,0 +1,19 @@
+printf "get 2\r\n" | nc 127.0.0.1 1337
+
+printf "get 1 2\r\n" | nc 127.0.0.1 1337
+
+
+printf "set mykey 0 60 4\r\n" | nc 127.0.0.1 1337
+
+tcpkali  127.0.0.1:1337 --1 "set mykey 0 60 4\r\n" --connect-rate=1k
+
+
+tcpkali  127.0.0.1:1337 --1 "get 1 2\r\n" --connect-rate=1k
+
+
+ tcpkali  --connections 100 127.0.0.1:1337 -1"get 1 2\r\n" --connect-rate=1k
+
+printf "get mykey2\r\n" | nc 127.0.0.1 1337
+tcpkali  --connections 100 127.0.0.1:1337 -1"get mykey2 2\r\n" --connect-rate=1k
+printf "set mykey2 0 60 4\r\ndata\r\n" | nc 127.0.0.1 1337
+

@@ -1,0 +1,25 @@
+{
+  "name": "cache-server",
+  "version": "1.0.0",
+  "description": "implementation of memcache in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --ext js --watch ./ --exec 'mocha --recursive ./test' --delay 1",
+    "start": "node index.js"
+  },
+  "author": "@rogoeliz",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "lru-cache": "^5.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0"
+  }
+}
