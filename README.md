@@ -16,7 +16,7 @@ You can swap the cache its using in few steps by adding a new cache in src/cache
 This memcached is based in the protocol present in https://github.com/memcached/memcached/blob/master/doc/protocol.txt
 
 ## Installation
-Clone this proyect 
+Clone this project 
 ```
 cd node-cache/server
 npm install
@@ -45,7 +45,7 @@ printf "get mykey2\r\n" | nc 127.0.0.1 1337
 printf "set mykey2 0 60 4\r\ndata\r\n" | nc 127.0.0.1 1337
 ```
 ### Testing using parallel connections
-You can stress test this proyect using tcpkali https://github.com/satori-com/tcpkali
+You can stress test this project using tcpkali https://github.com/satori-com/tcpkali
 
 ```
 tcpkali  --connections 100 127.0.0.1:1337 -1"get mykey2 2\r\n" --connect-rate=1k
