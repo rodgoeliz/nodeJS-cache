@@ -1,5 +1,8 @@
-# ⚠️ This is a work in progress
-# You shouldn't expect things to “just work”
+# ⚠️      This is a work in progress
+
+### You shouldn't expect things to “just work”
+
+🚨 This project uses ES9 features related to deconstructing
 
 # Memcached 
 `memcached` is a Memcached server made in Node.js.
@@ -7,6 +10,7 @@
 ### Interesting bits .
 
 The cache I ended up using, uses timeouts to expire the key value pair in the LRU
+
 
 
 You can swap the cache its using in few steps by adding a new cache in src/caches/ see node-lru-cache.js for example
