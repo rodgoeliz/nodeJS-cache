@@ -3,6 +3,7 @@
 ### You shouldn't expect things to “just work”
 
 🚨 This project uses ES9 features related to deconstructing
+```object spread property' is only available in ES9```
 
 # Memcached 
 `memcached` is a Memcached server made in Node.js.
