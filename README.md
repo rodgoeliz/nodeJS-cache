@@ -2,7 +2,7 @@
 
 ### You shouldn't expect things to “just work”
 
-🚨 This project uses ES9 features related to deconstructing
+🚨 This project uses ES9 features related to destructuring
 ```object spread property' is only available in ES9```
 
 # Memcached 
